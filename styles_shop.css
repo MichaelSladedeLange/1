@@ -68,10 +68,10 @@ hr {
   .cardbox:active{
       background-color: #0ff;
   }
-	.heading{
-		width:80%;
-		margin: 0 auto 0 auto;
-	}
+  .heading{
+    width:80%;
+    margin: 0 auto 0 auto;
+  }
 }
 
 
@@ -229,17 +229,13 @@ from{transform: translate(-190px,-20px) rotate(30deg);opacity: 0.3;}
     box-shadow: 0 0 35px 5px gold;
     animation: 1s glowg linear infinite;
 }
-.golden:hover{
-  background-color: gold;
-}
+
 .purplean{
   border-color: purple;
     box-shadow: 0 0 35px 5px purple;
     animation: 1s glowp ease-in-out infinite;
 }
-.purplean:hover{
-  background-color: purple;
-}
+
 
 @keyframes glowg {
   0%{box-shadow: 0 0 25px 1px gold; }
@@ -255,6 +251,22 @@ from{transform: translate(-190px,-20px) rotate(30deg);opacity: 0.3;}
 .cardbox{
   margin: 50px 0;
 }
+.golden:active{
+  background-color: gold;
+}
+
+.purplean:active{
+  background-color: purple;
+}
+}
+
+@media (min-width:800px) {
+  .golden:hover{
+    background-color: gold;
+  }
+  .purplean:hover{
+    background-color: purple;
+  }
 }
 
 @media (min-width: 1400px) {
