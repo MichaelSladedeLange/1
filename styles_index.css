@@ -40,7 +40,7 @@ hr{
   left: 30%;
   top: 30%;
   animation-name: shootingStar;
-  animation-duration: 120s;
+  animation-duration: 60s;
   animation-iteration-count: infinite;
 animation-timing-function: ease-in-out;
 animation-delay: 0.5s;
@@ -81,16 +81,16 @@ animation-delay: 0.5s;
 @keyframes shootingStar {
 
 0%{transform: translate(-10vh,-10vh); opacity: 0;}
-0.5%{opacity: 1;}
-1%{transform: translate(40vh,40vh); opacity: 0;}
+2%{opacity: 1;}
+4%{transform: translate(40vh,40vh); opacity: 0;}
 
 30%{transform: translate(70vh, 30vh);opacity: 0;}
-30.5%{opacity: 1;}
-31%{transform: translate(100vh,60vh); opacity: 0;}
+32%{opacity: 1;}
+34%{transform: translate(100vh,60vh); opacity: 0;}
 
 66%{transform: translate(-40vh, 20vh);opacity: 0;}
-66.5%{opacity: 1;}
-67%{transform: translate(-10vh,50vh); opacity: 0;}
+68%{opacity: 1;}
+70%{transform: translate(-10vh,50vh); opacity: 0;}
 }
 
 
@@ -198,14 +198,23 @@ font-family: "Bungee Outline";
 font-weight: 600;
 font-size: 5rem;
 }
+.Header_Welcome:hover{
+  color:#008891;
+}
 .Header_Discrip{
   color:white;
   font-family: "Quicksand";
   padding-top: 50px;
   font-size: 1.4rem;
 }
+.Header_Discrip:hover{
+    color:#008891;
+}
 .Header_H3{
   color: white;
+}
+.Header_H3:hover{
+  color:#ff7b54;
 }
 .hh2{
     font-family: "Bungee Shade";
@@ -274,6 +283,13 @@ to   { transform: rotate(360deg) translateX(300px)  rotate(110deg);}
   padding-top: 150px;
   background-color: rgba(0,0,0,0.6);
 }
+.oneone{
+border-style: solid;
+border-color: white;
+border-width: 1px;
+  border-radius: 50%;
+
+}
 
 @keyframes circle {
   0%{ transform: rotate(0deg);}
@@ -310,7 +326,23 @@ text-align: center;
 }
 
 
+#testimonials{
+  padding: 20px 20px;
+  text-align: center;
+  color:white;
+}
+.carousel-item{
+  padding: 10px 15%;
+}
+.testimonial-text{
+  font-size: 1.5rem;
+}
 
+.hhh{
+  color:white;
+  text-align: center;
+  margin-top: 100px;
+}
 
 
 
@@ -345,8 +377,7 @@ text-align: center;
     opacity: 1;
 }
 .ShootStar{
-  position: absolute;
-  animation: none;
+  animation: shootone 60s ease-in-out 1s infinite;
 }
 .AstroTwo{
   animation: bounce1 5s ease-in-out infinite alternate;
@@ -384,6 +415,22 @@ text-align: center;
 
 
 
+
+}
+
+@keyframes shootone{
+
+  0%{transform: translate(0, 0); opacity: 0;}
+  1%{opacity: 1;}
+  2%{transform: translate(50vw, 30vh); opacity: 0;}
+
+  30%{transform: translate(10vw, 40vh);opacity: 0;}
+  31%{opacity: 1;}
+  32%{transform: translate(60vw, 70vh); opacity: 0;}
+
+  66%{transform: translate(-30vw, -30vh);opacity: 0;}
+  67%{opacity: 1;}
+  68%{transform: translate(40vw, 10vh); opacity: 0;}
 
 }
 
