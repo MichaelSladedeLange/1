@@ -68,6 +68,10 @@ hr {
   .cardbox:active{
       background-color: #0ff;
   }
+	.heading{
+		width:80%;
+		margin: 0 auto 0 auto;
+	}
 }
 
 
