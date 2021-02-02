@@ -15,29 +15,16 @@ body{
   overflow-x: hidden;
   background-color: black;/*#e7d9ea;*/
 }
-hr{
-	border-top: 3px solid #c7b198;
-  margin:0;
+
+
+
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
-.sec{
-  border-top: 1px solid #c7b198;
-  margin:0;
-}
-.back{
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: -2;
-  opacity: 0.5;
-}
-.backmob{
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  transform: rotate(180deg);
-  opacity: 0;
-  z-index: -2;
-}
+
 
 /*heading*/
 .heading{
@@ -49,75 +36,218 @@ hr{
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   font-weight: bold;
-
+}
+.bio{
+  color:white;
+    font-family: "Montserrat", sans-serif;
 }
 
-/*shopping items*/
-.flexcontainer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+/*card design*/
+
+hr {
+	border-top: 1px solid grey;
+  margin: 0;
+  padding:0;
 }
-.card{
-  margin: 50px ;
-  height: 470px;
+.cardbox{
+  position: relative;
+  margin: 50px 50px;
+  height: 500px;
   width: 250px;
-  border-radius: 2%;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #c7b198;
-  background-color: #74c7b8;
+  border: 2px solid #0ff;
+  border-radius: 15px 50px;
+  overflow: hidden;
+  box-shadow: 0 0 30px 2px #0ff;
 }
-.card:hover{
-  background-image: linear-gradient(to bottom right,#0d7377, #32e0c4 );
+.cardbox:hover{
+background-color: #0ff;
 }
-.cardImg{
-  height: 250px;
+
+
+
+
+
+
+.TopHalfcard{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+
+.BottomHalfCard{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+.infocard{
+  position: absolute;
+  text-align: center;
+  height: 100%;
   width: 100%;
 }
-.img{
-width: 100%;
-height: 100%;
-}
-.cardhead{
-  text-align: center;
-}
-.head{
-  font-family: "Montserrat", sans-serif;
-}
-.size{
-  text-align: center;
-  margin: 10px 0 0 0;
-  font-family: "Montserrat", sans-serif;
+.image{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  animation: 4s zoom ease-in-out infinite alternate;
 }
 
- .pricesec{
-     text-align: center;
-     margin: 10px 0 0 0;
- }
-.price{
-  font-family:  "Montserrat",sans-serif;
-  font-weight: bold;
+@keyframes zoom {
+  from{transform: scale(1);}
+  to{transform: scale(0.95);}
+}
+.headcard{
+  position: relative;
+  color:white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+.headcard1{
+  position: relative;
+  color:white;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+.middlecard{
+    position: relative;
+  color:white;
+  font-family: 'Quicksand', sans-serif;
+  margin: 10px;
+  line-height: 2;
+  font-size: 1rem;
+}
+.middlecard1{
+    position: relative;
+  color:white;
+  font-family: 'Quicksand', sans-serif;
+  margin: 10px;
+  font-size: 1rem;
+}
+.retail{
+  position: absolute;
+color:white;
+font-family: 'Quicksand', sans-serif;
+font-size: 0.7rem;
+bottom: -3px;
+margin:10px;
+right: 15px;
+}
+.bottomcard{
+    position: absolute;
+  color:white;
+  font-family: 'Quicksand', sans-serif;
   font-size: 2rem;
-  animation: change 1s linear infinite alternate;
-}
-
-
-@media (max-width:800px) {
-  .back{
-    opacity: 0;
-  }
-  .backmob{
-    opacity: 0.5;
-  }
+  bottom: 10px;
+  margin:10px;
+  right: 10px;
 
 }
 
-@keyframes change {
-from{color: #11698e; }
-to{color: #456268;}
-/*
-to{color: #0d7377; }
-*/
+.line1{
+  height: 3px;
+  width: 200px;
+  background-color: white;
+
+  position: absolute;
+  animation: line1 0.4s ease-in-out infinite ;
+  opacity: 0;
+  z-index: -2;
+}
+.line2{
+  height: 3px;
+  width: 120px;
+  background-color: white;
+
+  position: absolute;
+      animation: line2 0.72s ease-in-out 1s infinite ;
+      opacity: 0;
+      z-index: -2;
+}
+.line3{
+  height: 3px;
+  width: 80px;
+  background-color: white;
+
+  position: absolute;
+      animation: line3 1.05s ease-in-out 0.5s infinite ;
+opacity: 0;
+z-index: -2;
+}
+
+.red{
+  background-color: red;
+  animation-delay: 0.2s;
+}
+.blue{
+  background-color: #0ff;
+  animation-delay: 0.4s;
+}
+.green{
+  background-color: #54e346;
+  animation-delay: 0.6s;
+}
+.gold{
+  background-color: gold;
+  animation-delay: 0.8s;
+}
+.purple{
+  background-color: purple;
+  animation-delay: 1s;
+}
+@keyframes line1 {
+ from{transform: translate(-200px, -50px) rotate(30deg);opacity: 0.3;}
+   to{transform: translate(250px, 210px) rotate(30deg);opacity: 0.3;}
+}
+@keyframes line2 {
+from{transform: translate(-190px,-40px) rotate(30deg);opacity: 0.3;}
+  to{transform: translate(250px,215px) rotate(30deg);opacity: 0.3;}
+
+}
+@keyframes line3 {
+from{transform: translate(-190px,-20px) rotate(30deg);opacity: 0.3;}
+  to{transform: translate(250px, 235px) rotate(30deg);opacity: 0.3;}
+}
+
+.golden{
+  border-color: gold;
+    box-shadow: 0 0 35px 5px gold;
+    animation: 1s glowg linear infinite;
+}
+.golden:hover{
+  background-color: gold;
+}
+.purplean{
+  border-color: purple;
+    box-shadow: 0 0 35px 5px purple;
+    animation: 1s glowp ease-in-out infinite;
+}
+.purplean:hover{
+  background-color: purple;
+}
+
+@keyframes glowg {
+  0%{box-shadow: 0 0 25px 1px gold; }
+  50%{box-shadow: 0 0 30px 2px gold; }
+  100%{box-shadow: 0 0 25px 1px gold; }
+}
+@keyframes glowp {
+  0%{box-shadow: 0 0 25px 1px purple; }
+  50%{box-shadow: 0 0 35px 5px purple; }
+  100%{box-shadow: 0 0 25px 1px purple; }
+}
+@media (max-width: 800px){
+.cardbox{
+  margin: 50px 0;
+}
+}
+
+@media (min-width: 1400px) {
+  .cardbox{
+    margin: 50px 100px;
+  }
 }
