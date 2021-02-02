@@ -59,8 +59,15 @@ hr {
   overflow: hidden;
   box-shadow: 0 0 30px 2px #0ff;
 }
-.cardbox:hover{
-background-color: #0ff;
+@media (min-width:800px) {
+  .cardbox:hover{
+  background-color: #0ff;
+  }
+}
+@media (max-width:800px) {
+  .cardbox:active{
+      background-color: #0ff;
+  }
 }
 
 
