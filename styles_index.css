@@ -123,11 +123,21 @@ top: 10%;
   animation: AstroBoyTwo 20s ease-in-out 1;
 }
 .ScrollDown_Tag{
+  opacity: 1;
   padding-top: 20%;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  animation: fadein 6s ease-in-out 1;
+  animation: downdown 1.5s ease-in-out 1.6s infinite ;
 }
+.ScrollDown_Tag1{
+  opacity: 1;
+  padding-top: 0;
+    animation: downdown 1.5s ease-in-out 1.5s infinite ;
+}
+@keyframes downdown {
+  0%{transform: translate(0); opacity: 1;}
+  70%{transform: translate(0,25px); opacity: 1; }
+    95%{transform: translate(0); opacity: 0.5;}
+}
+
 .ScrollDown_Mobile1{
   position: absolute;
 margin-left: auto;
@@ -158,13 +168,6 @@ font-size: 1.5rem;
   opacity: 0;
 }
 
-
-
-
-@keyframes fadein {
-  from{opacity: 0}
-  to{opacity: 1}
-}
 
 @keyframes AstroBoyTwo {
 0%{transform: rotate(0);}
