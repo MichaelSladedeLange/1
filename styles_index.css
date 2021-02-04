@@ -124,7 +124,7 @@ top: 10%;
 }
 .ScrollDown_Tag{
   opacity: 1;
-  padding-top: 20%;
+  padding-top: 100px;
   animation: downdown 1.5s ease-in-out 1.6s infinite ;
 }
 .ScrollDown_Tag1{
@@ -186,43 +186,102 @@ font-size: 1.5rem;
 .HeaderSection{
   border-style: solid;
   border-width: 2px;
-  border-color: white;
-  border-radius: 2%;
+  border-color: #0ff;
+  border-radius: 20px;
   position: relative;
   width:50%;
-padding: 120px 5px;
+padding: 100px 5px;
   text-align: center;
   margin: 0 auto 75px auto;
-  background-color: rgb(0,0,0,0.5);
+  background-color: rgb(0,0,0,0.6);
+  box-shadow: 0 0 25px 3px #0ff;
+  transition: all 0.5s linear 0s;
+}
+
+.HeaderSection:hover{
+  box-shadow: 0 0 50px 6px gold;
+  border-color: gold;
 }
 .Header_Welcome{
 color: white;
 font-family: "Bungee Outline";
 font-weight: 600;
 font-size: 5rem;
+text-shadow: 3px 3px #0ff;
 }
-.Header_Welcome:hover{
-  color:#008891;
-}
+
 .Header_Discrip{
   color:white;
   font-family: "Quicksand";
   padding-top: 50px;
   font-size: 1.4rem;
-}
-.Header_Discrip:hover{
-    color:#008891;
-}
-.Header_H3{
-  color: white;
-}
-.Header_H3:hover{
-  color:#ff7b54;
-}
-.hh2{
-    font-family: "Bungee Shade";
+  line-height: 2;
 }
 
+.Header_H3{
+  font-family: "Bungee Hairline", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.hh2{
+    font-family: "Bungee Shade";
+    text-shadow: 5px 5px 10px #0ff;
+}
+.dotred{
+  position: absolute;
+  border-radius: 50%;
+  border-style: hidden;
+  height: 15px;
+  width: 15px;
+  top: 10px;
+  left: 10px;
+  background-color: #ef4f4f;
+  box-shadow: 0 0 10px 2px #ef4f4f;
+
+}
+.dotyellow{
+  position: absolute;
+    border-radius: 50%;
+      border-style: hidden;
+  height: 15px;
+  width: 15px;
+  top: 10px;
+  left: 30px;
+  background-color: #ffe227;
+    box-shadow: 0 0 10px 2px #ffe227;
+}
+.dotgreen{
+  position: absolute;
+    border-radius: 50%;
+      border-style: hidden;
+  height: 15px;
+  width: 15px;
+  top: 10px;
+  left: 50px;
+  background-color: #61b15a;
+      box-shadow: 0 0 10px 2px #61b15a;
+}
+.liner{
+  position: absolute;
+  top: 35px;
+  height: 1px;
+  left: 10px;
+  right: 10px;
+  margin: 0 auto 0 auto;
+  background-color: grey;
+}
+@media (min-width:800px) {
+  .dotred:hover{
+    transform: scale(1.2);
+  }
+  .dotyellow:hover{
+    transform: scale(1.2);
+  }
+  .dotgreen:hover{
+    transform: scale(1.2);
+  }
+}
 
 
 
@@ -364,6 +423,10 @@ text-align: center;
   margin: 0 auto 50px auto;
   padding: 75px 5px;
 }
+.HeaderSection:hover{
+    box-shadow: 0 0 25px 3px #0ff;
+    border-color: #0ff;
+}
 .Header_Welcome{
   font-size: 3rem;
 }
@@ -416,9 +479,6 @@ text-align: center;
   font-size: 1rem;
 }
 
-
-
-
 }
 
 @keyframes shootone{
@@ -446,7 +506,9 @@ text-align: center;
     transform: translate(250px);
     animation: OrbitalOneDeskSmall 15s linear infinite;
   }
-
+.HeaderSection{
+  width: 70%;
+}
 
   .AboutMe_ImageOne{
     height: 150px;
