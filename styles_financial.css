@@ -49,7 +49,39 @@ hr{
   font-size: 0.7rem;
 }
 
+.desktop{
+  color:white;
+  font-family: "Montserrat",sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+.warning{
+  color:#ffb4b4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.application{
+  color: #0ff;
+  text-shadow: 5px 5px 5px #0ff;
+}
+.application:hover{
+  color: gold;
+  text-shadow: 7px 7px 10px gold;
+}
 
+.appdes{
+  color: #0ff;
+  opacity: 0.8;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
 
 /* future series*/
 .futureseries{
@@ -83,6 +115,7 @@ hr{
   border-color: white;
   text-align: center;
   margin: 80px 25px 30px 25px;
+  box-shadow: 10px 10px 10px 3px grey;
 }
 .mycardsimg{
 
@@ -166,7 +199,9 @@ hr{
 .six{
     animation: bump 15s ease-in-out 2.5s infinite;
 }
-
+.seven{
+    animation: bump 15s ease-in-out 3s infinite;
+}
 
 
 
@@ -199,6 +234,9 @@ hr{
   .bounce{
     width: 90%;
     margin: 0 auto 0 auto;
+  }
+  .appdes{
+    width:90%;
   }
 
 
